@@ -7,6 +7,8 @@
 
 // import exercicios.Exercicio01;
 // import exercicios.Exercicio02.Carro;
+import exercicios.Exercicio04.Aluno;
+import exercicios.Exercicio04.BDAluno;
 
 // import provas.Prova1.Venda;
 
@@ -20,6 +22,22 @@ public class App {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        // ArrayList
+        // https://www.w3schools.com/java/java_arraylist.asp
+
+        // Aluno aluno = new Aluno();
+        // aluno.imprime();
+
+        BDAluno alunos = new BDAluno(3);
+
+        alunos.cadastrarAluno();
+        alunos.cadastrarAluno();
+        alunos.cadastrarAluno();
+
+        alunos.imprimeAluno(1);
+
+        alunos.imprimeAlunoComMaiorCoeficiente();
+
+        alunos.imprimeAlunosDoPeriodo(7);
     }
 }
