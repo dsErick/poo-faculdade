@@ -12,6 +12,9 @@ import java.util.Scanner;
  * A classe aluno deve disponibilizar os seguintes métodos: 
  *  - Método responsável por imprimir os dados do aluno;
  *  - Método responsável por receber do teclado os dados do aluno;
+ * 
+    Aluno aluno = new Aluno();
+    aluno.imprime();
  */
 public class Aluno {
     private String nome;
@@ -25,6 +28,7 @@ public class Aluno {
      * Recebe do teclado os dados do aluno
      */
     public Aluno () {
+        @SuppressWarnings("resource")
         Scanner scan = new Scanner(System.in);
 
         System.out.print("\nDigite o nome do aluno: ");

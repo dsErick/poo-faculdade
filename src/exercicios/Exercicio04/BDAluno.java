@@ -12,6 +12,18 @@ package exercicios.Exercicio04;
  *  - Método que recebe (por parâmetro) a matrícula do aluno e imprime os demais dados (atributos) desse aluno. 
  *  - Método que retorna o aluno com maior coeficiente;
  *  - Método que recebe (por parâmetro) um período e imprime os alunos desse período.
+ * 
+    BDAluno alunos = new BDAluno(3);
+
+    alunos.cadastrarAluno();
+    alunos.cadastrarAluno();
+    alunos.cadastrarAluno();
+
+    alunos.imprimeAluno(1);
+
+    alunos.imprimeAlunoComMaiorCoeficiente();
+
+    alunos.imprimeAlunosDoPeriodo(7);
  */
 public class BDAluno {
     private Aluno alunos[];
