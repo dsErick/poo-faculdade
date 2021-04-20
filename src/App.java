@@ -4,7 +4,8 @@
 // import aulas.Aula06;
 // import aulas.Aula07.Cliente;
 // import aulas.Aula07.BDCliente;
-import aulas.Aula08;
+// import aulas.Aula08;
+import aulas.Aula09.BDAluno;
 
 // import exercicios.Exercicio01;
 // import exercicios.Exercicio02.Carro;
@@ -19,6 +20,17 @@ import aulas.Aula08;
  */
 public class App {
     public static void main(String[] args) {
-        new Aula08();
+        BDAluno bd = new BDAluno();
+
+        bd.cadastrarAluno();
+        bd.cadastrarAluno();
+        bd.cadastrarAluno();
+
+        bd.imprimeBD();
+        bd.imprimeAluno();
+
+        bd.removeAluno();
+
+        bd.imprimeBD();
     }
 }

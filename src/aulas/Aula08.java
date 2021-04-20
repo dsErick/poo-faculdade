@@ -3,7 +3,7 @@ package aulas;
 import java.util.ArrayList;
 
 /**
- * Aula 09 Parte 1 - Teoria
+ * Aula 09 Parte 1, Teoria - 19-04-2021
  * @link https://www.youtube.com/watch?v=hCFu9Sy4dcM
  */
 public class Aula08 {
@@ -28,7 +28,7 @@ public class Aula08 {
         lista.set(1, 7);
         System.out.println(lista); // [5, 7, 6, 1]
 
-        // Imprime o valor do indíce indicado
+        // Retorna o valor do indíce indicado
         Integer i2 = lista.get(2);
         System.out.println(i2); // 6
 
