@@ -3,6 +3,20 @@ package aulas.Aula09;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+    BDAluno bd = new BDAluno();
+
+    bd.cadastrarAluno();
+    bd.cadastrarAluno();
+    bd.cadastrarAluno();
+
+    bd.imprimeBD();
+    bd.imprimeAluno();
+
+    bd.removeAluno();
+
+    bd.imprimeBD();
+ */
 public class BDAluno {
     private ArrayList<Aluno> bd = new ArrayList<Aluno>();
 

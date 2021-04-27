@@ -5,12 +5,15 @@
 // import aulas.Aula07.Cliente;
 // import aulas.Aula07.BDCliente;
 // import aulas.Aula08;
-import aulas.Aula09.BDAluno;
+// import aulas.Aula09.BDAluno;
 
 // import exercicios.Exercicio01;
 // import exercicios.Exercicio02.Carro;
 // import exercicios.Exercicio04.Aluno;
 // import exercicios.Exercicio04.BDAluno;
+
+// import exercicios.Exercicio05.Jogador;
+import exercicios.Exercicio05.BDJogador;
 
 // import provas.Prova1.Venda;
 
@@ -20,17 +23,22 @@ import aulas.Aula09.BDAluno;
  */
 public class App {
     public static void main(String[] args) {
-        BDAluno bd = new BDAluno();
+        BDJogador bd = new BDJogador();
 
-        bd.cadastrarAluno();
-        bd.cadastrarAluno();
-        bd.cadastrarAluno();
+        bd.cadastrarJogador();
+        bd.cadastrarJogador();
+        bd.cadastrarJogador();
 
-        bd.imprimeBD();
-        bd.imprimeAluno();
+        bd.imprimeJogador(5);
+        bd.imprimeJogador(1);
 
-        bd.removeAluno();
-
-        bd.imprimeBD();
+        System.out.println("\n--------------------------------------\n");
+        bd.jogadorComMaisGols();
+        
+        System.out.println("\n--------------------------------------\n");
+        bd.jogadorComGols(5);
+        
+        System.out.println("\n--------------------------------------\n");
+        bd.valorMedio();
     }
 }

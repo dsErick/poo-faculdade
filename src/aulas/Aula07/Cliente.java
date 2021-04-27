@@ -18,6 +18,7 @@ public class Cliente {
      * Construtor de Cliente
      */
     public Cliente() {
+        @SuppressWarnings("resource")
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Digite o CPF do cliente: ");
