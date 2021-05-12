@@ -13,6 +13,24 @@ import java.util.ArrayList;
  *      - Método que retorna o jogador com maior número de gols;
  *      - Método que recebe (por parâmetro) uma quantidade de gols e imprime o nome dos jogadores com o número de gols igual ou maior que o valor informado.
  *      - Método que retorna o valor de mercado médio dos jogadores do arrayList.
+ * 
+    BDJogador bd = new BDJogador();
+
+    bd.cadastrarJogador();
+    bd.cadastrarJogador();
+    bd.cadastrarJogador();
+
+    bd.imprimeJogador(5);
+    bd.imprimeJogador(1);
+
+    System.out.println("\n--------------------------------------\n");
+    bd.jogadorComMaisGols();
+    
+    System.out.println("\n--------------------------------------\n");
+    bd.jogadorComGols(5);
+    
+    System.out.println("\n--------------------------------------\n");
+    bd.valorMedio();
  */
 public class BDJogador {
     private ArrayList<Jogador> jogadores;

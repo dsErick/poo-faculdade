@@ -13,32 +13,20 @@
 // import exercicios.Exercicio04.BDAluno;
 
 // import exercicios.Exercicio05.Jogador;
-import exercicios.Exercicio05.BDJogador;
+// import exercicios.Exercicio05.BDJogador;
 
 // import provas.Prova1.Venda;
+import provas.Prova2;
 
 /**
- * 
+ *
  * @author Erick
  */
 public class App {
     public static void main(String[] args) {
-        BDJogador bd = new BDJogador();
+        Prova2 numeros = new Prova2();
 
-        bd.cadastrarJogador();
-        bd.cadastrarJogador();
-        bd.cadastrarJogador();
-
-        bd.imprimeJogador(5);
-        bd.imprimeJogador(1);
-
-        System.out.println("\n--------------------------------------\n");
-        bd.jogadorComMaisGols();
-        
-        System.out.println("\n--------------------------------------\n");
-        bd.jogadorComGols(5);
-        
-        System.out.println("\n--------------------------------------\n");
-        bd.valorMedio();
+        numeros.removeValor(8);
+        numeros.removeMenores(5);
     }
 }
