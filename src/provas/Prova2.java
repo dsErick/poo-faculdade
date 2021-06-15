@@ -12,6 +12,11 @@ import java.util.ArrayList;
  *  - Método que aloca o arrayList na memória.
  *  - Método que recebe por parâmetro um valor inteiro e remove esse valor do arrayList.
  *  - Método que recebe por parâmetro um valor inteiro e remove do arrayList os valores menores do que o passado por parâmetro
+ * 
+        Prova2 numeros = new Prova2();
+
+        numeros.removeValor(8);
+        numeros.removeMenores(5);
  */
 public class Prova2 {
     private ArrayList<Integer> numeros;

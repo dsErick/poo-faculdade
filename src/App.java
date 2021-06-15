@@ -6,6 +6,9 @@
 // import aulas.Aula07.BDCliente;
 // import aulas.Aula08;
 // import aulas.Aula09.BDAluno;
+import aulas.Aula13.Aluno;
+import aulas.Aula13.Pessoa;
+import aulas.Aula13.Professor;
 
 // import exercicios.Exercicio01;
 // import exercicios.Exercicio02.Carro;
@@ -16,7 +19,7 @@
 // import exercicios.Exercicio05.BDJogador;
 
 // import provas.Prova1.Venda;
-import provas.Prova2;
+// import provas.Prova2;
 
 /**
  *
@@ -24,9 +27,23 @@ import provas.Prova2;
  */
 public class App {
     public static void main(String[] args) {
-        Prova2 numeros = new Prova2();
+        Pessoa pessoa = new Pessoa();
 
-        numeros.removeValor(8);
-        numeros.removeMenores(5);
+        pessoa.setNome("Fulano");
+        System.out.println(pessoa.getNome());
+
+        Aluno aluno = new Aluno();
+
+        aluno.setNome("João");
+        aluno.setMatricula(123);
+        System.out.println(aluno.getNome() + " " + aluno.getMatricula());
+        aluno.fazerAniversario();
+        aluno.cancelaMatricula();
+
+        Professor professor = new Professor();
+
+        professor.setNome("Mario");
+        professor.setSalario(942);
+        System.out.println(professor.getNome() + " " + professor.getSalario());
     }
 }
