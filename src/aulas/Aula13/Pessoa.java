@@ -3,6 +3,11 @@ package aulas.Aula13;
 /**
  * https://www.youtube.com/watch?v=RmEiShe2gLA
  * aula do dia 14-06-2021
+ * 
+    Pessoa pessoa = new Pessoa();
+
+    pessoa.setNome("Fulano");
+    System.out.println(pessoa.getNome());
  */
 public class Pessoa {
     private String nome;

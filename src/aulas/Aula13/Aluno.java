@@ -1,5 +1,15 @@
 package aulas.Aula13;
 
+/**
+ * 
+    Aluno aluno = new Aluno();
+
+    aluno.setNome("João");
+    aluno.setMatricula(123);
+    System.out.println(aluno.getNome() + " " + aluno.getMatricula());
+    aluno.fazerAniversario();
+    aluno.cancelaMatricula();
+ */
 public class Aluno extends Pessoa {
     private Integer matricula;
     private String curso;

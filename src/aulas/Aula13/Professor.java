@@ -1,5 +1,13 @@
 package aulas.Aula13;
 
+/**
+ * 
+    Professor professor = new Professor();
+
+    professor.setNome("Mario");
+    professor.setSalario(942);
+    System.out.println(professor.getNome() + " " + professor.getSalario());
+ */
 public class Professor extends Pessoa {
     private String especialidade;
     private double salario;
