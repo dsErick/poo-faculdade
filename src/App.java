@@ -19,6 +19,9 @@
 // import exercicios.Exercicio07.Animal;
 // import exercicios.Exercicio07.Cachorro;
 // import exercicios.Exercicio07.Mamifero;
+import exercicios.Exercicio08.Empregado;
+import exercicios.Exercicio08.Representante;
+import exercicios.Exercicio08.Vendedor;
 
 // import provas.Prova1.Venda;
 // import provas.Prova2;
@@ -29,6 +32,19 @@
  */
 public class App {
     public static void main(String[] args) {
+        Empregado empregado = new Empregado(1000, 100);
+        System.out.println("empregado");
+        System.out.println(empregado.calculaComissao());
+        System.out.println(empregado.calculaSalarioTotal());
 
+        Representante representante = new Representante(1000, 100, 100);
+        System.out.println("\nrepresentante");
+        System.out.println(representante.calculaComissao());
+        System.out.println(representante.calculaSalarioTotal());
+
+        Vendedor vendedor = new Vendedor(1000, 100, 100);
+        System.out.println("\nvendedor");
+        System.out.println(vendedor.calculaComissao());
+        System.out.println(vendedor.calculaSalarioTotal());
     }
 }
