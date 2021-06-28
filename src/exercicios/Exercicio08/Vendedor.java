@@ -7,6 +7,10 @@ package exercicios.Exercicio08;
  *      Na implementação do método calcula comissão deve-se retornar a multiplicação do valor de serviços prestados por 15%.
  *      Já na implementação do método calcula salário total deve-se retornar a soma do salário base, da comissão e do auxilio alimentação.
  *
+    Representante representante = new Representante(1000, 100, 100);
+    System.out.println("\nrepresentante");
+    System.out.println(representante.calculaComissao());
+    System.out.println(representante.calculaSalarioTotal());
  */
 public class Vendedor extends Empregado {
     private double auxilioTransporte;

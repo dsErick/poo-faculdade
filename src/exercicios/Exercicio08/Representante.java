@@ -7,6 +7,10 @@ package exercicios.Exercicio08;
  *      Na implementação do método calcula comissão deve-se retornar a multiplicação do valor de serviços prestados por 7%.
  *      Já na implementação do método calcula salário total deve-se retornar a soma do salário base, da comissão e da gratificação por tempo de serviço.
  *
+    Vendedor vendedor = new Vendedor(1000, 100, 100);
+    System.out.println("\nvendedor");
+    System.out.println(vendedor.calculaComissao());
+    System.out.println(vendedor.calculaSalarioTotal());
  */
 public class Representante extends Empregado {
     private double gratificacaoPorTempoServico;

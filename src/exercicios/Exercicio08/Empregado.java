@@ -9,6 +9,10 @@ package exercicios.Exercicio08;
  *      Na implementação do método calcula comissão deve-se retornar a multiplicação do valor de serviços prestados por 10%.
  *      Já na implementação do método calcula salário total deve-se retornar a soma do salário base com a comissão.
  *
+    Empregado empregado = new Empregado(1000, 100);
+    System.out.println("empregado");
+    System.out.println(empregado.calculaComissao());
+    System.out.println(empregado.calculaSalarioTotal());
  */
 public class Empregado {
     private double salarioBase;
